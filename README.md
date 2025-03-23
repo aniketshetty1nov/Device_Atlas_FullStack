@@ -46,7 +46,7 @@ POST /fetch-devices: Accepts user-agents and saves them to the database.
 GET /devices: Retrieves all stored devices from the database.
 
 --------------------------------------------------------------------------
---------------------------The User Interface ----------------------
+----------------------------------------------------The User Interface ------------------------------------------------
 --------------------------------------------------------------------------
 
 1) The web Page
@@ -72,17 +72,19 @@ GET /devices: Retrieves all stored devices from the database.
 
 <img width="1138" alt="image" src="https://github.com/user-attachments/assets/51b1c6fa-5483-4fb1-98f0-aa134bb44234" />
 
+
 6) Filters for Mobile Devices only
-7) 
+
 <img width="1139" alt="image" src="https://github.com/user-attachments/assets/80954ef8-3896-4502-bdea-f2343aeb87e0" />
 
 
-5) Filters before and after sorting as per "OsVersion"
+7) Filters before sorting as per "OsVersion"
 
- <img width="560" alt="image" src="https://github.com/user-attachments/assets/314478b3-fc82-431c-bb8d-98cca32f69b5" />
+<img width="560" alt="image" src="https://github.com/user-attachments/assets/314478b3-fc82-431c-bb8d-98cca32f69b5" />
+
+8) Filters after sorting as per "OsVersion"
 
 <img width="560" alt="image" src="https://github.com/user-attachments/assets/a03a579f-598f-47ca-aee6-a1d376e2290a" />
-
 
 
 
