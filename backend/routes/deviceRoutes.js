@@ -10,7 +10,7 @@ module.exports = router;
 router.post('/fetch-devices', deviceController.fetchDevices);
 
 // Route to get all tablet devices
-router.get('/tablets', deviceController.getTablets);
+router.get('/devices', deviceController.getDevices);
 
 module.exports = router;
 

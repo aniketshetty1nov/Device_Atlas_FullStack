@@ -4,16 +4,17 @@ import axios from 'axios';
 import './App.css';
 
 export default function App(){
-  const [tablets ,setTablets ] = useState([]);
+  const [devices, setDevices ] = useState([]);
   const [userAgents, setUserAgents] = useState('');
   const [sortOrder, setSortOrder] = useState(null);
   const [sortColumn, setSortColumn] = useState(null);
   const [errorMessage, setErrorMessage] = useState("");
   const [popupMessage, setPopupMessage] = useState("");
   const [popupType, setPopupType] = useState("");
+  const [filter, setFilter] = useState('All'); 
 
   useEffect(() =>{  
-    fetchTablets();
+    fetchDevices();
   }, []) 
 
   const validateInput = () => {
@@ -37,13 +38,13 @@ export default function App(){
     }
 
   
-  const fetchTablets = async() =>{
+  const fetchDevices = async() =>{
     try{
-      const response = await axios.get('http://localhost:5001/tablets');
-      setTablets(response.data);
+      const response = await axios.get('http://localhost:5001/devices');
+      setDevices(response.data);
     }
     catch(error){
-      console.log("Error fetching tablets: ", error)
+      console.log("Error fetching devices: ", error)
     }
   };
 
@@ -60,7 +61,7 @@ export default function App(){
     if (!validateInput()) return;  // Check input validation before submitting
       try {
         await axios.post('http://localhost:5001/fetch-devices', { userAgents: userAgents.trim().split('\n') });
-        fetchTablets(); // Fetch updated data
+        fetchDevices(); // Fetch updated data
         setUserAgents(''); // Clear input box
         setErrorMessage("");   // Clear error message if successful
 
@@ -77,14 +78,23 @@ export default function App(){
     setSortOrder(isAsc ? 'desc' : 'asc');
     setSortColumn(column);
 
-    const sortedTablets = [...tablets].sort((a, b) => {
+    const sorteddevices = [...devices].sort((a, b) => {
       if (a[column] < b[column]) return isAsc ? 1 : -1;
       if (a[column] > b[column]) return isAsc ? -1 : 1;
       return 0;
     });
 
-    setTablets(sortedTablets);
+    setDevices(sorteddevices);
   };
+
+  const handleFilterChange = (event) => {
+    setFilter(event.target.value);
+  };
+
+  // Filtered list based on the selected filter
+  const filteredDevices = devices.filter((device) =>
+    filter === 'All' || device.primaryHardwareType === filter
+  );
 
 
 
@@ -98,7 +108,7 @@ export default function App(){
   
     <div className="container">
         <div className="header">
-          <h1>Filtered Tablet Devices</h1>
+          <h1>Devices</h1>
         </div>
         <div className="input-wrapper">
           <textarea 
@@ -114,12 +124,26 @@ export default function App(){
           <div className={`popup-message ${popupType}`}>{popupMessage}</div>
         )}
 
+
+      {/* Filter Dropdown */}
+      <div className="filter-section">
+        <label>Filter by Hardware Type: </label>
+        <select value={filter} onChange={handleFilterChange}>
+          <option value="All">All</option>
+          <option value="Tablet">Tablet</option>
+          <option value="Mobile Phone">Mobile</option>
+          <option value="Desktop">Desktop</option>
+        </select>
+      </div>
+
+        
       <div className="table-container">
-        {tablets.length > 0 ?(
+        
+        {filteredDevices.length > 0 ?(
           <table >
             <thead>
               <tr>
-                {['model', 'vendor', 'osName', 'osVersion', 'browserName'].map((col) => (
+                {['model', 'vendor', 'osName', 'osVersion', 'browserName','primaryHardwareType'].map((col) => (
                   <th key={col} onClick={() => handleSort(col)}>
                     {col.charAt(0).toUpperCase() + col.slice(1)}
                   </th>
@@ -127,19 +151,20 @@ export default function App(){
               </tr>
             </thead>
             <tbody>
-              {tablets.map((tablet, index) => (
+              {filteredDevices.map((device, index) => (
                 <tr key={index}>
-                  <td>{tablet.model}</td>
-                  <td>{tablet.vendor}</td>
-                  <td>{tablet.osName}</td>
-                  <td>{tablet.osVersion}</td>
-                  <td>{tablet.browserName}</td>
+                  <td>{device.model}</td>
+                  <td>{device.vendor}</td>
+                  <td>{device.osName}</td>
+                  <td>{device.osVersion}</td>
+                  <td>{device.browserName}</td>
+                  <td>{device.primaryHardwareType}</td>
                 </tr>
               ))}
             </tbody>
           </table>
         ) : (
-          <p>No tablet devices found.</p>
+          <p>No device found.</p>
         )}
       </div>
     </div>

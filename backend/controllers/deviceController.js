@@ -23,14 +23,15 @@ const fetchDevices = async (req, res) => {
 };
 
 // Get all tablet devices
-const getTablets = async (req, res) => {
+const getDevices = async (req, res) => {
   try {
-    const tablets = await deviceService.getTablets();
-    res.status(200).json(tablets);
+    const devices = await deviceService.getDevices();
+    console.log(devices)
+    res.status(200).json(devices);
   } catch (error) {
-    res.status(500).json({ error: 'Error fetching tablets' });
+    res.status(500).json({ error: 'Error fetching Devices' });
   }
 };
 
-module.exports = { fetchDevices, getTablets };
+module.exports = { fetchDevices, getDevices };
 

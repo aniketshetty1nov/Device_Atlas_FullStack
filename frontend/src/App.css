@@ -135,3 +135,36 @@ tr:nth-child(even) {
   0% { opacity: 1; }
   100% { opacity: 0; }
 }
+
+
+
+/* Filter Section Styling */
+.filter-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.filter-section label {
+  margin-right: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Style the dropdown */
+.filter-section select {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  color: #333;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.filter-section select:focus {
+  border-color: #007bff;
+  outline: none;
+}
