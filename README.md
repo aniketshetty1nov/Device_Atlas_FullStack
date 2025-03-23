@@ -46,7 +46,7 @@ POST /fetch-devices: Accepts user-agents and saves them to the database.
 GET /devices: Retrieves all stored devices from the database.
 
 --------------------------------------------------------------------------
-----------------------------------------------------The User Interface ------------------------------------------------
+----------------------------The User Interface----------------------------
 --------------------------------------------------------------------------
 
 1) The web Page
