@@ -11,9 +11,9 @@ Database: MongoDB (via Mongoose)
 
 <img width="460" alt="image" src="https://github.com/user-attachments/assets/53772e9c-119a-4eb2-9ff2-60f8d5226a84" />
 
-
+------------------------------------- 
 Backend Setup (Express & MongoDB)
-
+-------------------------------------
 1 Open terminal and Navigate to the backend folder:
 
 ---> cd backend
@@ -26,8 +26,9 @@ Backend Setup (Express & MongoDB)
 
 The backend will be running on http://localhost:5001
 
-
+-------------------------------------
 Frontend Setup (React)
+-------------------------------------
 
 1 Open 2nd Terminal and Navigate to the device-atlas-frontend folder:
 ---> cd device-atlas-frontend
@@ -42,6 +43,10 @@ API Endpoints
 
 POST /fetch-devices: Accepts user-agents and saves them to the database.
 GET /devices: Retrieves all stored devices from the database.
+
+--------------------------------------------------------------------------
+--------------------------The User Interface ----------------------
+--------------------------------------------------------------------------
 
 1) The web Page
 
