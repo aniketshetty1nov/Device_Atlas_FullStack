@@ -12,6 +12,9 @@ Database: MongoDB (via Mongoose)
 
 <img width="460" alt="image" src="https://github.com/user-attachments/assets/53772e9c-119a-4eb2-9ff2-60f8d5226a84" />
 
+<img width="658" alt="image" src="https://github.com/user-attachments/assets/f79a373a-9234-45be-86cf-a1be9f1b5a75" />
+
+
 ------------------------------------- 
 Backend Setup (Express & MongoDB)
 -------------------------------------
