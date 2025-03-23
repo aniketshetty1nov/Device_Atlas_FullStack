@@ -42,6 +42,20 @@ API Endpoints
 
 POST /fetch-devices: Accepts user-agents and saves them to the database.
 
+
+<img width="1470" alt="Image" src="https://github.com/user-attachments/assets/fa04f934-61f5-441c-bba7-8da996379154" />
+
+<img width="1021" alt="Image" src="https://github.com/user-attachments/assets/ebf77af1-f810-48cb-a8fa-4a8612957fb0" />
+
+<img width="931" alt="Image" src="https://github.com/user-attachments/assets/b1fd5ff2-119e-488c-98a5-0310375fb57f" />
+
+<img width="1257" alt="Image" src="https://github.com/user-attachments/assets/64eeeccf-74bb-4823-94ec-0175dce81d9e" />
+
+<img width="1262" alt="Image" src="https://github.com/user-attachments/assets/e4152837-5300-4177-aefd-f258f6b78ca9" />
+
+<img width="777" alt="Image" src="https://github.com/user-attachments/assets/81034636-61b2-40f7-94bb-7bbd338e5e7c" />
+
+<img width="777" alt="Image" src="https://github.com/user-attachments/assets/75eb62cf-08c1-415d-8d65-92ddbf9a1047" />
 GET /devices: Retrieves all stored devices from the database.
 
 
