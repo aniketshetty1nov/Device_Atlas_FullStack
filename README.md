@@ -56,12 +56,12 @@ User Interface
 
 2) The Input Validation for Blank User Agents
 
-<img width="991" alt="image" src="https://github.com/user-attachments/assets/ae25bc8e-2ea6-410f-94d0-87ac422b903a" />
+<img width="932" alt="image" src="https://github.com/user-attachments/assets/a658c73d-f8f7-4008-a9c3-0db09f58512e" />
 
 
 3) Input Validation for checking valid User Agents
 
-<img width="991" alt="image" src="https://github.com/user-attachments/assets/8b30f6ed-c932-4be0-99e0-99a70f51e6d5" />
+<img width="932" alt="image" src="https://github.com/user-attachments/assets/90a32ff8-7c94-4eb0-a2a5-92125ab2a9b1" />
 
 
 4) Post Request to get the device data from DeviceAtlas web and save them in mongoDB database and update it in the UI
