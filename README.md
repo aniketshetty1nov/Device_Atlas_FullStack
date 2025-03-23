@@ -9,27 +9,7 @@ Backend: Node.js, Express, MongoDB
 Frontend: React, CSS
 Database: MongoDB (via Mongoose)
 
-
-FULLSTACK TEST
-│
-├── backend
-│   ├── controllers
-│   ├── models
-│   ├── routes
-│   ├── services
-│   ├── app.js
-│   └── index.js
-│
-├── device-atlas-frontend
-│   ├── public
-│   └── src
-│       ├── App.css
-│       ├── App.js
-│       ├── index.js
-│
-├── package.json (Backend)
-├── package-lock.json (Backend)
-├── README.md
+<img width="460" alt="image" src="https://github.com/user-attachments/assets/53772e9c-119a-4eb2-9ff2-60f8d5226a84" />
 
 
 Backend Setup (Express & MongoDB)
@@ -61,9 +41,33 @@ Frontend Setup (React)
 API Endpoints
 
 POST /fetch-devices: Accepts user-agents and saves them to the database.
-
 GET /devices: Retrieves all stored devices from the database.
+
+1) The web Page
+
+<img width="1470" alt="Image" src="https://github.com/user-attachments/assets/fa04f934-61f5-441c-bba7-8da996379154" />
+
+2) Input Validation
+
+<img width="1021" alt="Image" src="https://github.com/user-attachments/assets/ebf77af1-f810-48cb-a8fa-4a8612957fb0" />
+
+3) Input Validation
+
+<img width="931" alt="Image" src="https://github.com/user-attachments/assets/b1fd5ff2-119e-488c-98a5-0310375fb57f" />
+
+4) Post Request to save user agents and get only Tablet data.
+
+<img width="1257" alt="Image" src="https://github.com/user-attachments/assets/64eeeccf-74bb-4823-94ec-0175dce81d9e" />
+
+<img width="1262" alt="Image" src="https://github.com/user-attachments/assets/e4152837-5300-4177-aefd-f258f6b78ca9" />
+
+5) Filters before and after sorting as per "Model, Vendor,OsName, OsVersion"
+
+<img width="777" alt="Image" src="https://github.com/user-attachments/assets/81034636-61b2-40f7-94bb-7bbd338e5e7c" />
+
+<img width="777" alt="Image" src="https://github.com/user-attachments/assets/75eb62cf-08c1-415d-8d65-92ddbf9a1047" />
+
 
 
 Author
-Aniket Shetty
+-Aniket Shetty
