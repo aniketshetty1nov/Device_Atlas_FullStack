@@ -9,27 +9,7 @@ Backend: Node.js, Express, MongoDB
 Frontend: React, CSS
 Database: MongoDB (via Mongoose)
 
-
-FULLSTACK TEST
-│
-├── backend
-│   ├── controllers
-│   ├── models
-│   ├── routes
-│   ├── services
-│   ├── app.js
-│   └── index.js
-│
-├── device-atlas-frontend
-│   ├── public
-│   └── src
-│       ├── App.css
-│       ├── App.js
-│       ├── index.js
-│
-├── package.json (Backend)
-├── package-lock.json (Backend)
-├── README.md
+<img width="460" alt="image" src="https://github.com/user-attachments/assets/53772e9c-119a-4eb2-9ff2-60f8d5226a84" />
 
 
 Backend Setup (Express & MongoDB)
