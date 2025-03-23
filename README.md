@@ -41,6 +41,8 @@ Frontend Setup (React)
 API Endpoints
 
 POST /fetch-devices: Accepts user-agents and saves them to the database.
+GET /devices: Retrieves all stored devices from the database.
+
 
 
 <img width="1470" alt="Image" src="https://github.com/user-attachments/assets/fa04f934-61f5-441c-bba7-8da996379154" />
@@ -53,10 +55,13 @@ POST /fetch-devices: Accepts user-agents and saves them to the database.
 
 <img width="1262" alt="Image" src="https://github.com/user-attachments/assets/e4152837-5300-4177-aefd-f258f6b78ca9" />
 
+Filters for sorting as per Model,Vendor,OsName,OsVersion
+
 <img width="777" alt="Image" src="https://github.com/user-attachments/assets/81034636-61b2-40f7-94bb-7bbd338e5e7c" />
 
 <img width="777" alt="Image" src="https://github.com/user-attachments/assets/75eb62cf-08c1-415d-8d65-92ddbf9a1047" />
-GET /devices: Retrieves all stored devices from the database.
+
+
 
 
 Author
